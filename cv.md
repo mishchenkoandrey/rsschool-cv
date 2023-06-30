@@ -3,7 +3,7 @@
 +79162865465\
 <buryonok@gmail.com>\
 [github.com/mishchenkoandrey](https://github.com/mishchenkoandrey)\
-[linkedin.com/in/andrey-mishchenko-985599217/](https://linkedin.com/in/andrey-mishchenko-985599217/)\
+[linkedin.com/in/andrey-mishchenko-985599217](https://linkedin.com/in/andrey-mishchenko-985599217/)\
 [ru.hexlet.io/u/mishchenko](https://ru.hexlet.io/u/mishchenko)
 
 Имею самодеятельный коммерческий опыт в верстке.\
@@ -56,7 +56,7 @@
 - генерация отчета в виде plain text, stylish и json
 
 Стек технологий:
-- Commander.js\
+- Commander.js
 - Jest
 
 ### Игры разума
@@ -94,7 +94,7 @@
 - Gulp
 - Pug
 
-### Навыки
+## Навыки
 
 - hard
   - JavaScript
@@ -128,14 +128,14 @@
 - [RSS агрегатор](https://github.com/mishchenkoandrey/frontend-project-lvl3)
 - [Вычислитель отличий](https://github.com/mishchenkoandrey/frontend-project-lvl2)
 - [Игры разума](https://github.com/mishchenkoandrey/frontend-project-lvl1)
-  
+
 ### Верстальщик
 
 2021
 
 [Hexlet](https://ru.hexlet.io/programs/frontend)
 
-Выполнен проект
+Выполнен проект\
 [Мессенджер «Hexlet Chat»](https://github.com/mishchenkoandrey/layout-designer-project-lvl3)
 
 ### Тестировщик ПО
@@ -143,6 +143,7 @@
 2016
 
 [QATestLab](https://training.qatestlab.com/)
+
 Получен сертификат "Основы тестирования ПО"
 
 ## Владение английским
@@ -161,7 +162,7 @@
 
 Вёрстка сайтов
 
-### Офис-менеджер**
+### Офис-менеджер
 
 ООО \"Зуб.ру Шаболовка\"
 
@@ -199,4 +200,3 @@
 Инженер (многоцелевые гусеничные и колёсные машины)
 
 Сентябрь 2000 - Март 2004
-
