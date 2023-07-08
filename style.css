@@ -155,7 +155,7 @@ section {
   position: fixed;
   bottom: 60px;
   right: 20px;
-  font-size: 4em;
+  font-size: 2em;
 }
 
 @media (min-width: 1000px) {
@@ -173,5 +173,10 @@ section {
   .aside .section-content {
     position: fixed;
     border: 0;
+  }
+  .to-top {
+    right: auto;
+    margin-left: 320px;
+    font-size: 4em;
   }
 }
