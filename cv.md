@@ -101,7 +101,7 @@
   - HTML
   - CSS, SASS (SCSS), Autoprefixer
   - Bootstrap
-  - Babe
+  - Babel
   - Webpack, Gulp
   - ESLint, HTMLHint, Stylelint
   - Git, GitHub
@@ -133,7 +133,7 @@
 
 2021
 
-[Hexlet](https://ru.hexlet.io/programs/frontend)
+[Hexlet](https://ru.hexlet.io/programs/layout-designer)
 
 Выполнен проект\
 [Мессенджер «Hexlet Chat»](https://github.com/mishchenkoandrey/layout-designer-project-lvl3)
