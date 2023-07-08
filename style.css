@@ -149,8 +149,7 @@ main {
   content: ')';
 }
 .rss {
-  width: 121px;
-  height: 45px;
+  width: 44px;
 }
 .to-top {
   position: fixed;
@@ -180,6 +179,9 @@ main {
   .aside .section-content {
     position: fixed;
     border: 0;
+  }
+  .rss {
+    width: 121px;
   }
   .to-top {
     right: auto;
