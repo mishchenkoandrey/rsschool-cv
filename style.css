@@ -56,6 +56,9 @@ section {
   width: 100%;
   border-bottom: 1px solid var(--gray);
 }
+main {
+  max-width: 100%;
+}
 .ls-none {
   padding-inline-start: 0;
   list-style: none;
@@ -115,7 +118,6 @@ section {
 .container {
   position: relative;
   margin: 0 auto;
-  max-width: 1440px;
   padding: 0 20px;
 }
 .padding-0 {
@@ -137,9 +139,9 @@ section {
   content: ':';
 }
 .section-content {
-  margin: 0 20px;
+  padding: 1px 20px 0;
   height: 100%;
-  padding-top: 1px;
+  overflow: auto;
 }
 .school:before {
   content: '(';
@@ -162,6 +164,9 @@ section {
   section {
     margin-right: 400px;
     border-right: 1px solid var(--gray);
+  }
+  .container {
+    max-width: 1440px;
   }
   .aside {
     order: 1;
