@@ -125,7 +125,6 @@ main {
 }
 .ava-wrap {
   position: relative;
-  margin: 1em 0;
 }
 .ava-wrap:before {
   content: '';
@@ -168,6 +167,9 @@ main {
   .container {
     max-width: 1440px;
   }
+  .ava-wrap {
+    margin: 1em 0;
+  }
   .aside {
     order: 1;
     position: absolute;
@@ -183,5 +185,8 @@ main {
     right: auto;
     margin-left: 320px;
     font-size: 4em;
+  }
+  .jc-start-1000 {
+    justify-content: start;
   }
 }
