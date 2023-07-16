@@ -34,15 +34,6 @@ a {
   color: var(--white);
   transition: .3s;
 }
-@keyframes flash {
-  50% {
-    color: var(--orange);
-    text-shadow: 0 0 10px var(--orange), 0 0 10px var(--orange);
-  }
-}
-a:hover {
-  animation: flash 1s ease-in-out infinite;
-}
 img {
   display: block;
 }
@@ -94,6 +85,9 @@ main {
 }
 .pb-10 {
   padding-bottom: 10px;
+}
+.pb-20 {
+  padding-bottom: 20px;
 }
 .li {
   position: relative;
@@ -166,9 +160,6 @@ main {
   .container {
     max-width: 1440px;
   }
-  .ava-wrap {
-    margin: 1em 0;
-  }
   .aside {
     order: 1;
     position: absolute;
@@ -190,5 +181,17 @@ main {
   }
   .jc-start-1000 {
     justify-content: start;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  @keyframes flash {
+    50% {
+      color: var(--orange);
+      text-shadow: 0 0 10px var(--orange), 0 0 10px var(--orange);
+    }
+  }
+  a:hover {
+    animation: flash 1s ease-in-out infinite;
   }
 }
