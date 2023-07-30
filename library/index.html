@@ -9,318 +9,392 @@
   </head>
   <body>
     <header>
-      <div class="container flex">
+      <div class="container flex ai-center">
         <h1>Brooklyn Public Library</h1>
         <nav>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Favorites</a></li>
-            <li><a href="#">Coffee Shop</a></li>
-            <li><a href="#">Our Contacts</a></li>
-            <li><a href="#">Digital Library Cards</a></li>
+          <ul class="flex gap-30">
+            <li><a href="#about">About</a></li>
+            <li><a href="#favorites">Favorites</a></li>
+            <li><a href="#shop">Coffee Shop</a></li>
+            <li><a href="#contacts">Our Contacts</a></li>
+            <li><a href="#cards">Digital Library Cards</a></li>
           </ul>
         </nav>
-        <a href="#"></a>
+        <a href="#" class="profile"></a>
       </div>
     </header>
-    <main>
-      <section>
+    <main class="flex fd-column gap-40">
+      <section class="welcome">
         <div class="container flex">
-          <h2>Welcome</h2>
+          <h2 class="visually-hidden">Welcome</h2>
         </div>
       </section>
-      <section>
-        <div class="container flex">
+      <section id="about">
+        <div class="container flex fd-column ai-center">
           <h2>About</h2>
-          <div>The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</div>
+          <div class="about-library">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</div>
           <div>
-            <ul>
-              <li><img src="assets/img/image-1.jpg" alt="Brooklyn Library"></li>
-              <li><img src="assets/img/image-2.jpg" alt="Brooklyn Library"></li>
-              <li><img src="assets/img/image-3.jpg" alt="Brooklyn Library"></li>
-              <li><img src="assets/img/image-4.jpg" alt="Brooklyn Library"></li>
-              <li><img src="assets/img/image-5.jpg" alt="Brooklyn Library"></li>
+            <ul class="flex">
+              <li class="library-item"><img src="assets/img/image-1.jpg" alt="Brooklyn Library"></li>
+              <li class="library-item"><img src="assets/img/image-2.jpg" alt="Brooklyn Library"></li>
+              <li class="library-item"><img src="assets/img/image-3.jpg" alt="Brooklyn Library"></li>
+              <li class="library-item"><img src="assets/img/image-4.jpg" alt="Brooklyn Library"></li>
+              <li class="library-item"><img src="assets/img/image-5.jpg" alt="Brooklyn Library"></li>
             </ul>
-            <div class="pagination">
-              <button class="pagination" type="button"></button>
-              <button class="pagination" type="button"></button>
-              <button class="pagination" type="button"></button>
+            <div class="pagination flex">
+              <button class="pagination-btn active" type="button"></button>
+              <button class="pagination-btn" type="button"></button>
+              <button class="pagination-btn" type="button"></button>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        <div class="container flex">
+      <section id="favorites">
+        <div class="container flex fd-column gap-40">
           <h2>Favorites</h2>
-          <div>Pick favorites of season</div>
-          <div>
-            <input type="radio" id="winter"><label for="winter">Winter</label>
-            <input type="radio" id="spring"><label for="spring">Spring</label>
-            <input type="radio" id="summer"><label for="summer">Summer</label>
-            <input type="radio" id="autumn"><label for="autumn">Autumn</label>
+          <div class="favorites-text">Pick favorites of season</div>
+          <div class="radio-wrap flex">
+            <div class="radio flex">
+              <input type="radio" id="winter" name="season" checked><label for="winter">Winter</label>
+            </div>
+            <div class="radio flex">
+              <input type="radio" id="spring" name="season" ><label for="spring">Spring</label>
+            </div>
+            <div class="radio flex">
+              <input type="radio" id="summer" name="season" ><label for="summer">Summer</label>
+            </div>
+            <div class="radio flex">
+              <input type="radio" id="autumn" name="season" ><label for="autumn">Autumn</label>
+            </div>
           </div>
-          <div>
-            <article>
-              <a href="#">Staff Picks</a>
-              <h4>The Book Eaters</h4>
-              <div>By Sunyi Dean</div>
-              <p>An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
+          <div class="flex gap-40 books">
+            <article class="flex fd-column">
+              <div class="flex fd-column jc-start gap-20">
+                <a href="#">Staff Picks</a>
+                <div>
+                  <h4>The Book Eaters</h4>
+                  <div class="author">By Sunyi Dean</div>
+                </div>
+                <p>An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
+              </div>
               <button type="button">Buy</button>
               <img src="assets/img/book-1.jpg" alt="The Book Eaters">
             </article>
-            <article>
-              <a href="#">Staff Picks</a>
-              <h4>Cackle</h4>
-              <div>By Rachel Harrison</div>
-              <p></p>
+            <article class="flex fd-column">
+              <div class="flex fd-column jc-start gap-20">
+                <a href="#">Staff Picks</a>
+                <div>
+                  <h4>Cackle</h4>
+                  <div class="author">By Rachel Harrison</div>
+                </div>
+                <p>Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</p>
+              </div>
               <button type="button">Buy</button>
               <img src="assets/img/book-2.jpg" alt="Cackle">
             </article>
-            <article>
-              <a href="#">Staff Picks</a>
-              <h4>Dante: Poet of the Secular World</h4>
-              <div>By Erich Auerbach</div>
-              <p>Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</p>
+            <article class="flex fd-column">
+              <div class="flex fd-column jc-start gap-20">
+                <a href="#">Staff Picks</a>
+                <div>
+                  <h4>Dante: Poet of the Secular World</h4>
+                  <div class="author">By Erich Auerbach</div>
+                </div>
+                <p>Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</p>
+              </div>
               <button type="button">Buy</button>
               <img src="assets/img/book-3.jpg" alt="Dante: Poet of the Secular World">
             </article>
-            <article>
-              <a href="#">Staff Picks</a>
-              <h4>The Last Queen</h4>
-              <div>By Clive Irving</div>
-              <p>A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
-              <button type="button">Buy</button>
+            <article class="flex fd-column">
+              <div class="flex fd-column jc-start gap-20">
+                <a href="#">Staff Picks</a>
+                <div>
+                  <h4>The Last Queen</h4>
+                  <div class="author">By Clive Irving</div>
+                </div>
+                <p>A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
+              </div>
+              <button type="button" disabled>Own</button>
               <img src="assets/img/book-4.jpg" alt="The Last Queen">
             </article>
-            <article>
-              <a href="#">Staff Picks</a>
-              <h4>The Body</h4>
-              <div>By Stephen King</div>
-              <p>Powerful novel that takes you back to a nostalgic time, exploring both the beauty and danger and loss of innocence that is youth.</p>
+            <article class="flex fd-column">
+              <div class="flex fd-column jc-start gap-20">
+                <a href="#">Staff Picks</a>
+                <div>
+                  <h4>The Body</h4>
+                  <div class="author">By Stephen King</div>
+                </div>
+                <p>Powerful novel that takes you back to a nostalgic time, exploring both the beauty and danger and loss of innocence that is youth.</p>
+              </div>
               <button type="button">Buy</button>
               <img src="assets/img/book-5.jpg" alt="The Body">
             </article>
-            <article>
-              <a href="#">Staff Picks</a>
-              <h4>Carry: A Memoir of Survival on Stolen Land</h4>
-              <div>By Toni Jenson</div>
-              <p>This memoir about the author's relationship with gun violence feels both expansive and intimate, resulting in a lyrical indictment of the way things are.</p>
+            <article class="flex fd-column">
+              <div class="flex fd-column jc-start gap-20">
+                <a href="#">Staff Picks</a>
+                <div>
+                  <h4>Carry: A Memoir of Survival on Stolen Land</h4>
+                  <div class="author">By Toni Jenson</div>
+                </div>
+                <p>This memoir about the author's relationship with gun violence feels both expansive and intimate, resulting in a lyrical indictment of the way things are.</p>
+              </div>
               <button type="button">Buy</button>
               <img src="assets/img/book-6.jpg" alt="">
             </article>
-            <article>
-              <a href="#">Staff Picks</a>
-              <h4>Days of Distraction</h4>
-              <div>By Alexandra Chang</div>
-              <p>This memoir about the author's relationship with gun violence feels both expansive and intimate, resulting in a lyrical indictment of the way things are.</p>
+            <article class="flex fd-column">
+              <div class="flex fd-column jc-start gap-20">
+                <a href="#">Staff Picks</a>
+                <div>
+                  <h4>Days of Distraction</h4>
+                  <div class="author">By Alexandra Chang</div>
+                </div>
+                <p>This memoir about the author's relationship with gun violence feels both expansive and intimate, resulting in a lyrical indictment of the way things are.</p>
+              </div>
               <button type="button">Buy</button>
               <img src="assets/img/book-7.jpg" alt="Days of Distraction">
             </article>
-            <article>
-              <a href="#">Staff Picks</a>
-              <h4>Dominicana</h4>
-              <div>By Angie Cruz</div>
-              <p>A fascinating story of a teenage girl who marries a man twice her age with the promise to bring her to America. Her marriage is an opportunity for her family to eventually immigrate. For fans of Isabel Allende and Julia Alvarez.</p>
+            <article class="flex fd-column">
+              <div class="flex fd-column jc-start gap-20">
+                <a href="#">Staff Picks</a>
+                <div>
+                  <h4>Dominicana</h4>
+                  <div class="author">By Angie Cruz</div>
+                </div>
+                <p>A fascinating story of a teenage girl who marries a man twice her age with the promise to bring her to America. Her marriage is an opportunity for her family to eventually immigrate. For fans of Isabel Allende and Julia Alvarez.</p>
+              </div>
               <button type="button">Buy</button>
               <img src="assets/img/book-8.jpg" alt="Dominicana">
             </article>
-            <article>
-              <a href="#">Staff Picks</a>
-              <h4>Crude: A Memoir</h4>
-              <div>By Pablo Fajardo & ​​Sophie Tardy-Joubert</div>
-              <p>Drawing and color by Damien Roudeau | This book illustrates the struggles of a group of indigenous Ecuadoreans as they try to sue the ChevronTexaco company for damage their oil fields did to the Amazon and her people</p>
+            <article class="flex fd-column">
+              <div class="flex fd-column jc-start gap-20">
+                <a href="#">Staff Picks</a>
+                <div>
+                  <h4>Crude: A Memoir</h4>
+                  <div class="author">By Pablo Fajardo & ​​Sophie Tardy-Joubert</div>
+                </div>
+                <p>Drawing and color by Damien Roudeau | This book illustrates the struggles of a group of indigenous Ecuadoreans as they try to sue the ChevronTexaco company for damage their oil fields did to the Amazon and her people</p>
+              </div>
               <button type="button">Buy</button>
               <img src="assets/img/book-9.jpg" alt="Crude: A Memoir">
             </article>
-            <article>
-              <a href="#">Staff Picks</a>
-              <h4>Let My People Go Surfing</h4>
-              <div>By Yvon Chouinard</div>
-              <p>Chouinard—climber, businessman, environmentalist—shares tales of courage and persistence from his experience of founding and leading Patagonia, Inc. Full title: Let My People Go Surfing: The Education of a Reluctant Businessman, Including 10 More Years of Business Unusual.</p>
+            <article class="flex fd-column">
+              <div class="flex fd-column jc-start gap-20">
+                <a href="#">Staff Picks</a>
+                <div>
+                  <h4>Let My People Go Surfing</h4>
+                  <div class="author">By Yvon Chouinard</div>
+                </div>
+                <p>Chouinard—climber, businessman, environmentalist—shares tales of courage and persistence from his experience of founding and leading Patagonia, Inc. Full title: Let My People Go Surfing: The Education of a Reluctant Businessman, Including 10 More Years of Business Unusual.</p>
+              </div>
               <button type="button">Buy</button>
               <img src="assets/img/book-10.jpg" alt="Let My People Go Surfing">
             </article>
-            <article>
-              <a href="#">Staff Picks</a>
-              <h4>The Octopus Museum: Poems</h4>
-              <div>By Brenda Shaughnessy</div>
-              <p>This collection of bold and scathingly beautiful feminist poems imagines what comes after our current age of environmental destruction, racism, sexism, and divisive politics.</p>
+            <article class="flex fd-column">
+              <div class="flex fd-column jc-start gap-20">
+                <a href="#">Staff Picks</a>
+                <div>
+                  <h4>The Octopus Museum: Poems</h4>
+                  <div class="author">By Brenda Shaughnessy</div>
+                </div>
+                <p>This collection of bold and scathingly beautiful feminist poems imagines what comes after our current age of environmental destruction, racism, sexism, and divisive politics.</p>
+              </div>
               <button type="button">Buy</button>
               <img src="assets/img/book-11.jpg" alt="The Octopus Museum: Poems">
             </article>
-            <article>
-              <a href="#">Staff Picks</a>
-              <h4>Shark Dialogues: A Novel</h4>
-              <div>By Kiana Davenport</div>
-              <p>An epic saga of seven generations of one family encompasses the tumultuous history of Hawaii as a Hawaiian woman gathers her four granddaughters together in an erotic tale of villains and dreamers, queens and revolutionaries, lepers and healers.</p>
+            <article class="flex fd-column">
+              <div class="flex fd-column jc-start gap-20">
+                <a href="#">Staff Picks</a>
+                <div>
+                  <h4>Shark Dialogues: A Novel</h4>
+                  <div class="author">By Kiana Davenport</div>
+                </div>
+                <p>An epic saga of seven generations of one family encompasses the tumultuous history of Hawaii as a Hawaiian woman gathers her four granddaughters together in an erotic tale of villains and dreamers, queens and revolutionaries, lepers and healers.</p>
+              </div>
               <button type="button">Buy</button>
               <img src="assets/img/book-12.jpg" alt="Shark Dialogues: A Novel">
             </article>
-            <article>
-              <a href="#">Staff Picks</a>
-              <h4>Casual Conversation</h4>
-              <div>By Renia White</div>
-              <p>White's impressive debut collection takes readers through and beyond the concepts of conversation and the casual - both what we say to each other and what we don't, examining the possibilities around how we construct and communicate identity. </p>
+            <article class="flex fd-column">
+              <div class="flex fd-column jc-start gap-20">
+                <a href="#">Staff Picks</a>
+                <div>
+                  <h4>Casual Conversation</h4>
+                  <div class="author">By Renia White</div>
+                </div>
+                <p>White's impressive debut collection takes readers through and beyond the concepts of conversation and the casual - both what we say to each other and what we don't, examining the possibilities around how we construct and communicate identity. </p>
+              </div>
               <button type="button">Buy</button>
               <img src="assets/img/book-13.jpg" alt="Casual Conversation">
             </article>
-            <article>
-              <a href="#">Staff Picks</a>
-              <h4>The Great Fire</h4>
-              <div>By Lou Ureneck</div>
-              <p>The harrowing story of an ordinary American and a principled Naval officer who, horrified by the burning of Smyrna, led an extraordinary rescue effort that saved a quarter of a million refugees from the Armenian Genocide</p>
+            <article class="flex fd-column">
+              <div class="flex fd-column jc-start gap-20">
+                <a href="#">Staff Picks</a>
+                <div>
+                  <h4>The Great Fire</h4>
+                  <div class="author">By Lou Ureneck</div>
+                </div>
+                <p>The harrowing story of an ordinary American and a principled Naval officer who, horrified by the burning of Smyrna, led an extraordinary rescue effort that saved a quarter of a million refugees from the Armenian Genocide</p>
+              </div>
               <button type="button">Buy</button>
               <img src="assets/img/book-14.jpg" alt="The Great Fire">
             </article>
-            <article>
-              <a href="#">Staff Picks</a>
-              <h4>Rickey: The Life and Legend</h4>
-              <div>By Howard Bryant</div>
-              <p>With the fall rolling around, one can't help but think of baseball's postseason coming up! And what better way to prepare for it than reading the biography of one of the game's all-time greatest performers, the Man of Steal, Rickey Henderson?</p>
+            <article class="flex fd-column">
+              <div class="flex fd-column jc-start gap-20">
+                <a href="#">Staff Picks</a>
+                <div>
+                  <h4>Rickey: The Life and Legend</h4>
+                  <div class="author">By Howard Bryant</div>
+                </div>
+                <p>With the fall rolling around, one can't help but think of baseball's postseason coming up! And what better way to prepare for it than reading the biography of one of the game's all-time greatest performers, the Man of Steal, Rickey Henderson?</p>
+              </div>
               <button type="button">Buy</button>
               <img src="assets/img/book-15.jpg" alt="Rickey: The Life and Legend">
             </article>
-            <article>
-              <a href="#">Staff Picks</a>
-              <h4>Slug: And Other Stories</h4>
-              <div>By Megan Milks</div>
-              <p>Exes Tegan and Sara find themselves chained together by hairballs of codependency. A father and child experience the shared trauma of giving birth to gods from their wounds.</p>
+            <article class="flex fd-column">
+              <div class="flex fd-column jc-start gap-20">
+                <a href="#">Staff Picks</a>
+                <div>
+                  <h4>Slug: And Other Stories</h4>
+                  <div class="author">By Megan Milks</div>
+                </div>
+                <p>Exes Tegan and Sara find themselves chained together by hairballs of codependency. A father and child experience the shared trauma of giving birth to gods from their wounds.</p>
+              </div>
               <button type="button">Buy</button>
               <img src="assets/img/book-16.jpg" alt="Slug: And Other Stories">
             </article>
           </div>
         </div>
       </section>
-      <section>
-        <div class="container flex">
+      <section id="shop" class="shop">
+        <div class="container flex fd-column">
           <h2>Coffee Shop</h2>
-          <div>
+          <div class="ta-center">
             <p>In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation.</p>
             <p>You can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try desserts from bakery.</p>
           </div>
-          <section>
-            <h3>Coffee & Tea</h3>
-            <table>
-              <tr>
-                <td>Cold Brew Coffee</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>French Press Pot</td>
-                <td>6</td>
-              </tr>
-              <tr>
-                <td>Espresso</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td>Cappuccino</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td>Hot tea</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td>Cold tea</td>
-                <td>2</td>
-              </tr>
-            </table>
-          </section>
-          <section>
-            <h3>Desserts & Cakes</h3>
-            <table>
-              <tr>
-                <td>Forest Gateau</td>
-                <td>16</td>
-              </tr>
-              <tr>
-                <td>Blue Moon</td>
-                <td>16</td>
-              </tr>
-              <tr>
-                <td>Truffle Cake</td>
-                <td>15</td>
-              </tr>
-              <tr>
-                <td>Chocolate Cake</td>
-                <td>18</td>
-              </tr>
-              <tr>
-                <td>Poet’s Dream Cake</td>
-                <td>16</td>
-              </tr>
-              <tr>
-                <td>Pineapple Cake</td>
-                <td>14</td>
-              </tr>
-            </table>
-          </section>
+          <div class="flex">
+            <section>
+              <h3>Coffee & Tea</h3>
+              <table>
+                <tr>
+                  <td>Cold Brew Coffee</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>French Press Pot</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>Espresso</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Cappuccino</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>Hot tea</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Cold tea</td>
+                  <td>2</td>
+                </tr>
+              </table>
+            </section>
+            <section>
+              <h3>Desserts & Cakes</h3>
+              <table>
+                <tr>
+                  <td>Forest Gateau</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>Blue Moon</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>Truffle Cake</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Chocolate Cake</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>Poet’s Dream Cake</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>Pineapple Cake</td>
+                  <td>14</td>
+                </tr>
+              </table>
+            </section>
+          </div>
         </div>
       </section>
-      <section>
-        <div class="container flex">
+      <section id="contacts">
+        <div class="container flex fd-column">
           <h2>Our Contacts</h2>
-          <div>
-            <div>
-              <div>
-                <div>For all Library inquiries:</div>
-                <div>
+          <div class="flex">
+            <div class="flex fd-column gap-40 contact">
+              <div class="flex fd-column gap-40">
+                <div class="contact-title">For all Library inquiries:</div>
+                <div class="flex fd-column gap-20">
                   <div>Please call <a href="tel:+16177302370">(617) 730-2370</a></div>
                   <div>For TTY service, please call <a href="tel:+16177302370">(617) 730-2370</a></div>
                   <div>Putterham Library: <a href="tel:+16177302385">(617) 730-2385</a></div>
                 </div>
               </div>
-              <div>
-                <div>Senior Staff</div>
-                <div>Library Director: <b>Amanda Hirst</b></div>
+              <div class="flex fd-column gap-20">
+                <div class="contact-title">Senior Staff</div>
+                <div>Library Director: <a href="mailto:amandahirst@gmail.com">Amanda Hirst</a></div>
               </div>
             </div>
-            <div><img src="assets/img/map.jpg" alt="Map"></div>
+            <div class="contact"><img src="assets/img/map.jpg" alt="Map"></div>
           </div>
         </div>
       </section>
-      <section>
-        <div class="container flex">
+      <section id="cards">
+        <div class="container flex fd-column">
           <h2>Digital Library Cards</h2>
-          <div>
-            <div>Find your Library card</div>
-            <form>
-              <fieldset>
-                <div>Brooklyn Public Library</div>
-                <input type="text" placeholder="Reader's name">
-                <input type="text" placeholder="Card number">
-              </fieldset>
-              <button>Check the card</button>
-            </form>
-          </div>
-          <div>
-            <div>Get a reader card</div>
-            <p>You will be able to see a reader card after logging into account or you can register a new account</p>
-            <div>
-              <button>Sign Up</button>
-              <button>Log in</button>
+          <div class="flex">
+            <div class="flex fd-column gap-30 cards">
+              <div class="find">Find your Library card</div>
+              <form class="flex fd-column ai-center gap-20">
+                <fieldset class="flex fd-column gap-20">
+                  <div>Brooklyn Public Library</div>
+                  <div class="flex fd-column gap-25">
+                    <input type="text" placeholder="Reader's name">
+                    <input type="text" placeholder="Card number">
+                  </div>
+                </fieldset>
+                <button>Check the card</button>
+              </form>
+            </div>
+            <div class="flex fd-column jc-start ai-end gap-35 cards cards-get">
+              <div class="cards-get-title">Get a reader card</div>
+              <div class="cards-text">You will be able to see a reader card after logging into account or you can register a new account</div>
+              <div class="flex gap-20">
+                <button>Sign Up</button>
+                <button>Log in</button>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="container flex">
-        <div class="flex">
+      <div class="container flex fd-column gap-30">
+        <div class="flex footer-contacts">
           <div>
-            <a href="">286 Cadman Plaza, New York, <br>NY 11238, United States</a>
-            <ul>
-              <li><a href="">Twitter</a></li>
-            </ul>
-            <ul>
-              <li><a href="">Instagram</a></li>
-            </ul>
-            <ul>
-              <li><a href="">Facebook</a></li>
+            <a href="" class="address">286 Cadman Plaza, New York, <br>NY 11238, United States</a>
+            <ul class="flex jc-start gap-15">
+              <li><a href="https://twitter.com/" class="twitter"><span class="visually-hidden">Twitter</span></a></li>
+              <li><a href="https://www.instagram.com/" class="instagram"><span class="visually-hidden">Instagram</span></a></li>
+              <li><a href="https://www.facebook.com/" class="facebook"><span class="visually-hidden">Facebook</span></a></li>
             </ul>
           </div>
-          <div>
+          <div class="flex fd-column gap-10 ta-right">
             <div>
               <div>Mon - Fri</div>
               <div>08:00 am - 07:00 pm</div>
@@ -331,12 +405,13 @@
             </div>
           </div>
         </div>
-        <div class="flex">
+        <div class="flex footer-info">
           <div>2023</div>
           <a href="https://rs.school/js-stage0/">The Rolling Scopes School</a>
           <a href="https://github.com/mishchenkoandrey">mishchenkoandrey</a>
         </div>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
